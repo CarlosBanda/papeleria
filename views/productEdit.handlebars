@@ -1,0 +1,23 @@
+<div class="w-full max-w-xs">
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="/edit-product{{data.id}}" method="POST">
+    <div class="mb-4">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre del Producto</label>
+                        <input type="text" name="nameProduct" value="{{data.nameProduct}}" id="nameProduct" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Tijera" required>
+    </div>
+    <div class="mb-6">
+        <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Descripción del Producto</label>
+                        <input type="text" name="descripcion" value="{{data.descripcion}}" id="descripcion" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Tijera color azul" required>
+    </div>
+    <div class="mb-6">
+        <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Cantidad</label>
+                        <input type="text" name="cantidad" value="{{data.cantidad}}" id="cantidad" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="5" required>
+    </div>
+    <div class="mb-6">
+        <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Precio</label>
+                        <input type="text" name="price" id="price" value="{{data.price}}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="5" required>
+    </div>
+    <div class="flex items-center justify-between">
+      <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Editar Producto</button>
+    </div>
+  </form>
+</div>
